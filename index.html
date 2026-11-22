@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kaguya 2.0 — ассистент для Telegram Business</title>
-<meta name="description" content="Kaguya 2.0 — ассистент для Telegram Business без риска для аккаунта: автоответчик, анти-удаление, ИИ Gemini, модерация, RP и мини-игры.">
+<title>Kaguya 2.0 — ассистент для чатов Telegram</title>
+<meta name="description" content="Kaguya 2.0 — официальная автоматизация чатов Telegram: бесплатно, без Premium и без передачи паролей. Автоответчик, анти-удаление, ИИ Gemini, модерация, RP и мини-игры.">
 <meta name="theme-color" content="#0b090a">
 <link rel="canonical" href="https://threatux.github.io/kaguya-site/">
 
@@ -12,16 +12,16 @@
 <meta property="og:site_name" content="Kaguya 2.0">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:url" content="https://threatux.github.io/kaguya-site/">
-<meta property="og:title" content="Kaguya 2.0 — ассистент для Telegram Business">
-<meta property="og:description" content="Без риска для аккаунта: только официальный Business API. Подключение за 30 секунд.">
+<meta property="og:title" content="Kaguya 2.0 — ассистент для чатов Telegram">
+<meta property="og:description" content="Официальная автоматизация чатов Telegram — бесплатно, без Premium и без передачи паролей. Подключение за 30 секунд.">
 <meta property="og:image" content="https://threatux.github.io/kaguya-site/banner.jpg">
 <meta property="og:image:secure_url" content="https://threatux.github.io/kaguya-site/banner.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:alt" content="Kaguya 2.0">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kaguya 2.0 — ассистент для Telegram Business">
-<meta name="twitter:description" content="Без риска для аккаунта: только официальный Business API. Подключение за 30 секунд.">
+<meta name="twitter:title" content="Kaguya 2.0 — ассистент для чатов Telegram">
+<meta name="twitter:description" content="Официальная автоматизация чатов Telegram — бесплатно, без Premium и без передачи паролей. Подключение за 30 секунд.">
 <meta name="twitter:image" content="https://threatux.github.io/kaguya-site/banner.jpg">
 
 <style>
@@ -148,6 +148,11 @@
   .feat li{padding:12px;border-radius:14px;background:var(--glass2);border:1px solid var(--line)}
   .feat li b{display:block;color:#fff;margin-bottom:2px}
   .feat li span{color:var(--muted);font-size:14.5px}
+  .free-badge{
+    margin:0 0 12px;padding:10px 14px;border-radius:12px;text-align:center;font-weight:700;font-size:15px;
+    background:var(--rose-bg);color:var(--rose);border:1px solid var(--line-hover);
+  }
+  .step p.note{font-size:13.5px;color:var(--faint)}
   .hint{margin-top:12px;color:var(--muted);font-size:13.5px;text-align:center}
 
   footer{margin:40px 0 0;padding:22px 0 calc(28px + env(safe-area-inset-bottom));border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:14px}
@@ -177,7 +182,7 @@
   <header class="hero">
     <img class="banner" src="banner.jpg" alt="Kaguya 2.0" width="1280" height="720" decoding="async" fetchpriority="high">
     <h1>Kaguya 2.0</h1>
-    <p class="sub">Ассистент для Telegram Business без риска для аккаунта</p>
+    <p class="sub">Официальная автоматизация чатов Telegram — бесплатно, без Premium и без передачи паролей</p>
     <div class="cta">
       <a class="btn btn-primary" href="https://t.me/Kaguya_2_0bot">🚀 Запустить @Kaguya_2_0bot</a>
       <a class="btn btn-ghost" href="https://t.me/kaguya_2_0_bots">📢 Официальный канал</a>
@@ -186,6 +191,7 @@
 
   <section id="setup">
     <h2>⚡ Подключение за 30 секунд</h2>
+    <div class="free-badge">🆓 Бесплатно · Без Telegram Premium · Без паролей</div>
     <div class="card">
       <ol class="steps">
         <li class="step">
@@ -202,15 +208,16 @@
           <div class="num">2</div>
           <div class="step-body">
             <b>Откройте настройки Telegram</b>
-            <p><span class="path">Настройки → Telegram Business → Чат-боты</span></p>
+            <p><span class="path">Настройки → Аккаунт → Автоматизация чатов</span></p>
+            <p class="note">Если пункта нет — обновите Telegram или проверьте раздел «Telegram Business → Чат-боты».</p>
           </div>
         </li>
         <li class="step">
           <div class="num">3</div>
           <div class="step-body">
-            <b>Добавьте @Kaguya_2_0bot и выдайте права</b>
+            <b>Вставьте @Kaguya_2_0bot, выберите «Все личные чаты, кроме…» (или нужные чаты) и выдайте права</b>
             <div class="warn" role="note">
-              <div class="t">⚠️ Обязательно включите:</div>
+              <div class="t">⚠️ В блоке «Разрешения для бота» обязательно включите:</div>
               <ul>
                 <li><b>«Удаление всех сообщений»</b><br><span>нужно для <code>.mute</code> и <code>.del</code></span></li>
                 <li><b>«Удаление отправленных сообщений»</b><br><span>нужно для <code>.kawaii</code> и скрытия триггеров <code>.команд</code></span></li>
@@ -232,10 +239,10 @@
   <section id="security">
     <h2>🔒 Безопасность</h2>
     <div class="card sec-grid">
-      <div class="sec-item"><div class="ic">✅</div><div><b>Официальный Telegram Business API</b><p>Kaguya подключается штатной функцией Telegram «Чат-боты». Никаких сторонних клиентов.</p></div></div>
+      <div class="sec-item"><div class="ic">✅</div><div><b>Официальная автоматизация чатов Telegram</b><p>Kaguya подключается штатной функцией Telegram — бесплатно и без Premium. Никаких сторонних клиентов.</p></div></div>
       <div class="sec-item"><div class="ic">📵</div><div><b>Без номера и кода входа</b><p>Бот никогда не просит телефон, код из SMS, пароль 2FA или сессию (MTProto).</p></div></div>
       <div class="sec-item"><div class="ic">🛡</div><div><b>Аккаунт невозможно угнать</b><p>У бота нет доступа к входу в аккаунт — только к тем чатам и правам, что вы выдали.</p></div></div>
-      <div class="sec-item"><div class="ic">⏏️</div><div><b>Отключение в 1 тап</b><p>Удалите бота в «Чат-боты» — доступ пропадает мгновенно.</p></div></div>
+      <div class="sec-item"><div class="ic">⏏️</div><div><b>Отключение в 1 тап</b><p>Удалите бота в «Автоматизация чатов» — доступ пропадает мгновенно.</p></div></div>
     </div>
   </section>
 
@@ -319,7 +326,7 @@
       <a href="https://t.me/Kaguya_2_0bot">🤖 @Kaguya_2_0bot</a>
       <a href="https://t.me/kaguya_2_0_bots">📢 @kaguya_2_0_bots</a>
     </div>
-    <div>Kaguya 2.0 · Telegram Business Assistant</div>
+    <div>Kaguya 2.0 · Ассистент для чатов Telegram</div>
   </footer>
 </div>
 
